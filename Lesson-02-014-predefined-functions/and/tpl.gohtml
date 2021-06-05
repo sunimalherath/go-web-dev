@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing predefined functions - and</title>
+</head>
+<body>
+    Example #1:
+    {{range .}}
+        {{.}}
+    {{end}}
+
+    Example #2:
+    {{range .}}
+        {{if .UserName}}
+            {{.UserName}} - {{.Admin}}
+        {{end}}
+    {{end}}
+
+    Example #3:
+    {{range .}}
+        {{if and .UserName .Admin}}
+            {{.UserName}} - {{.Admin}}
+        {{end}}
+    {{end}}
+</body>
+</html>
