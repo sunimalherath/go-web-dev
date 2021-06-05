@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing functions - comparison</title>
+</head>
+<body>
+    Data to process: {{.}}
+    Check if Score1 is greater than Score2
+    {{if gt .Score1 .Score2}}
+        Score1 > Score2
+    {{else}}
+        Score1 is not greater than Score2
+    {{end}}
+    Check if Score1 is less than Score2
+    {{if lt .Score1 .Score2}}
+        Score1 < Score2
+    {{else}}
+        Score1 is not less than Score2
+    {{end}}
+    Check if Score1 is equal to Score2
+    {{if eq .Score1 .Score2}}
+        Score1 = Score2
+    {{else}}
+        Score1 is not equal to Score2
+    {{end}}
+    Check if the Score2 is less than 35
+    {{if lt .Score2 35}}
+        Score2 is less than 35
+    {{else}}
+        Score2 is not less than 35
+    {{end}}
+</body>
+</html>
